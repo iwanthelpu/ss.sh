@@ -38,12 +38,13 @@ echo -e "\n\n"
 if [[ choice -eq 1 ]]
 then 
     curl -s https://raw.githubusercontent.com/alanmathews9/s5-ss-lab/main/alan%20cs5a/absloader.c --output absolute_loader.c
-    curl -s https://github.com/alanmathews9/s5-ss-lab/raw/main/alan%20cs5a/input.dat --output input.dat
-    curl -s https://github.com/alanmathews9/s5-ss-lab/raw/main/alan%20cs5a/output.dat --output output.dat
+    curl -s https://raw.githubusercontent.com/alanmathews9/s5-ss-lab/main/alan%20cs5a/input.dat --output input.dat
+    curl -s https://raw.githubusercontent.com/alanmathews9/s5-ss-lab/main/alan%20cs5a/output.dat --output output.dat
     echo "copied to file absolute_loader.c "
     echo "copied input.dat to file input.dat"
     echo "copied output.dat to file output.dat"
     echo "in the present working directory ( current folder )"
+    printf '\n'
     echo "CHANGE THE CONTENTS OF ALL TXT FILES ACCORDING TO THE QUESTION"
 elif [[ choice -eq 2 ]]
 then
@@ -51,22 +52,23 @@ then
  curl -s https://raw.githubusercontent.com/alanmathews9/s5-ss-lab/main/alan%20cs5a/Input.txt --output Input.txt
  curl -s https://raw.githubusercontent.com/alanmathews9/s5-ss-lab/main/alan%20cs5a/Intermediate.txt --output Intermediate.txt
  curl -s https://raw.githubusercontent.com/alanmathews9/s5-ss-lab/main/alan%20cs5a/Optab.txt --output Optab.txt
- curl -s https://github.com/alanmathews9/s5-ss-lab/raw/main/alan%20cs5a/Symtab.txt --output Symtab.txt
+ curl -s https://raw.githubusercontent.com/alanmathews9/s5-ss-lab/main/alan%20cs5a/Symtab.txt --output Symtab.txt
  echo "copied program to file pass_1.c"
  echo "copied Input.txt to file Input.txt"
  echo "copied Intermediate.txt to file Intermediate.txt"
  echo "copied Optab.txt to file Optab.txt"
  echo "copied Symtab.txt to file Symtab.txt"
  echo "in the present working directory ( current folder )"
+ printf '\n'
  echo "CHANGE THE CONTENTS OF ALL TXT FILES ACCORDING TO THE QUESTION"
 elif [[ choice -eq 3 ]]
 then
   curl -s https://raw.githubusercontent.com/alanmathews9/s5-ss-lab/main/alan%20cs5a/pass2.c --output pass_2.c
-  curl -s https://github.com/alanmathews9/s5-ss-lab/raw/main/alan%20cs5a/Output.txt--output Output.txt
+  curl -s https://raw.githubusercontent.com/alanmathews9/s5-ss-lab/main/alan%20cs5a/Output.txt--output Output.txt
  curl -s https://raw.githubusercontent.com/alanmathews9/s5-ss-lab/main/alan%20cs5a/Intermediate.txt --output Intermediate.txt
  curl -s https://raw.githubusercontent.com/alanmathews9/s5-ss-lab/main/alan%20cs5a/Optab.txt --output Optab.txt
- curl -s https://github.com/alanmathews9/s5-ss-lab/raw/main/alan%20cs5a/Symtab.txt --output Symtab.txt 
- curl -s https://github.com/alanmathews9/s5-ss-lab/raw/main/alan%20cs5a/Objcode.txt --output Objcode.txt 
+ curl -s https://raw.githubusercontent.com/alanmathews9/s5-ss-lab/main/alan%20cs5a/Symtab.txt --output Symtab.txt 
+ curl -s https://raw.githubusercontent.com/alanmathews9/s5-ss-lab/main/alan%20cs5a/Objcode.txt --output Objcode.txt 
  
  echo "pass_2.c"
  echo "copied Output.txt to file Output.txt"
@@ -74,6 +76,7 @@ then
  echo "copied Optab.txt to file Optab.txt"
  echo "copied Symtab.txt to file Symtab.txt"
  echo "in the present working directory ( current folder )"
+ printf '\n'
  echo "CHANGE THE CONTENTS OF ALL TXT FILES ACCORDING TO THE QUESTION"
 elif [[ choice -eq 4 ]]
 then
@@ -106,6 +109,7 @@ then
 else 
   echo "Invalid: $choice"
 fi
+printf '\n'
 echo "Type  history -c to clear history "
 echo "Type history -w to wipe your trace "
 echo "Thank me later by buying me an icecream :) "
