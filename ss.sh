@@ -64,7 +64,7 @@ then
 elif [[ choice -eq 3 ]]
 then
   curl -s https://raw.githubusercontent.com/alanmathews9/s5-ss-lab/main/alan%20cs5a/pass2.c --output pass_2.c
-  curl -s https://raw.githubusercontent.com/alanmathews9/s5-ss-lab/main/alan%20cs5a/Output.txt--output Output.txt
+  curl -s https://raw.githubusercontent.com/alanmathews9/s5-ss-lab/main/alan%20cs5a/Output.txt --output Output.txt
  curl -s https://raw.githubusercontent.com/alanmathews9/s5-ss-lab/main/alan%20cs5a/Intermediate.txt --output Intermediate.txt
  curl -s https://raw.githubusercontent.com/alanmathews9/s5-ss-lab/main/alan%20cs5a/Optab.txt --output Optab.txt
  curl -s https://raw.githubusercontent.com/alanmathews9/s5-ss-lab/main/alan%20cs5a/Symtab.txt --output Symtab.txt 
