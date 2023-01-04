@@ -44,6 +44,7 @@ then
     echo "copied input.dat to file input.dat"
     echo "copied output.dat to file output.dat"
     echo "in the present working directory ( current folder )"
+    printf '\n'
     echo "CHANGE THE CONTENTS OF ALL TXT FILES ACCORDING TO THE QUESTION"
 elif [[ choice -eq 2 ]]
 then
@@ -58,15 +59,16 @@ then
  echo "copied Optab.txt to file Optab.txt"
  echo "copied Symtab.txt to file Symtab.txt"
  echo "in the present working directory ( current folder )"
+ printf '\n'
  echo "CHANGE THE CONTENTS OF ALL TXT FILES ACCORDING TO THE QUESTION"
 elif [[ choice -eq 3 ]]
 then
-  wget -q -O https://raw.githubusercontent.com/alanmathews9/s5-ss-lab/main/alan%20cs5a/pass2.c 
-  wget -q -O pass_2.c https://raw.githubusercontent.com/alanmathews9/s5-ss-lab/main/alan%20cs5a/Output.txt--output 
- wget -q -O Output.txt https://raw.githubusercontent.com/alanmathews9/s5-ss-lab/main/alan%20cs5a/Intermediate.txt Intermediate.txt
- wget -q -O Optab.txt https://raw.githubusercontent.com/alanmathews9/s5-ss-lab/main/alan%20cs5a/Optab.txt 
- wget -q -O Symtab.txt https://github.com/alanmathews9/s5-ss-lab/raw/main/alan%20cs5a/Symtab.txt 
- wget -q -O Objcode.txt https://github.com/alanmathews9/s5-ss-lab/raw/main/alan%20cs5a/Objcode.txt 
+  wget -q -O pass_2.c https://raw.githubusercontent.com/alanmathews9/s5-ss-lab/main/alan%20cs5a/pass2.c
+  wget -q -O Output.txt https://raw.githubusercontent.com/alanmathews9/s5-ss-lab/main/alan%20cs5a/Output.txt
+ wget -q -O Intermediate.txt https://raw.githubusercontent.com/alanmathews9/s5-ss-lab/main/alan%20cs5a/Intermediate.txt
+ wget -q -O Optab.txt https://raw.githubusercontent.com/alanmathews9/s5-ss-lab/main/alan%20cs5a/Optab.txt
+ wget -q -O Symtab.txt https://raw.githubusercontent.com/alanmathews9/s5-ss-lab/main/alan%20cs5a/Symtab.txt
+ wget -q -O Objcode.txt https://raw.githubusercontent.com/alanmathews9/s5-ss-lab/main/alan%20cs5a/Objcode.txt
  
  echo "pass_2.c"
  echo "copied Output.txt to file Output.txt"
@@ -74,6 +76,7 @@ then
  echo "copied Optab.txt to file Optab.txt"
  echo "copied Symtab.txt to file Symtab.txt"
  echo "in the present working directory ( current folder )"
+ printf '\n'
  echo "CHANGE THE CONTENTS OF ALL TXT FILES ACCORDING TO THE QUESTION"
 elif [[ choice -eq 4 ]]
 then
@@ -106,6 +109,7 @@ then
 else 
   echo "Invalid: $choice"
 fi
+printf '\n'
 echo "Type  history -c to clear history "
 echo "Type history -w to wipe your trace "
 echo "Thank me later by buying me an icecream :) "
